@@ -1,0 +1,25 @@
+## Database
+#spring.datasource.driverClassName = com.mysql.jdbc.Driver
+#spring.datasource.url = jdbc:mysql://localhost:3306/logparser
+#spring.datasource.username = root
+#spring.datasource.password = root
+#
+#spring.jpa.database = MYSQL
+#spring.jpa.show-sql = true
+#
+## Hibernate
+#hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#hibernate.show_sql: true
+#hibernate.hbm2ddl.auto: update
+#entitymanager.packagesToScan: /
+
+spring:
+  application:
+    name: Reporter
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reporter_db
+    username: user
+    password: password
+  sql:
+    init:
+      mode: always
