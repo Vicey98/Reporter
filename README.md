@@ -12,7 +12,11 @@ Main Components:
 - Spring Boot Application using Java 17 started using Elastic Beanstalk
 - Postgres database storing all messages sent
 - SNS topic sending SMS messages
-  ![Stock Sentiment Notifier System Design](..%2F..%2FDownloads%2FReporter%20System%20Design%20%282%29.png)
+
+
+### Design Diagram
+![Reporter System Design (2)](https://github.com/Vicey98/Reporter/assets/46387884/744b964b-2c62-46d3-8f5a-6d9847dfad7d)
+
 
 ## TODO
 - Better test coverage
