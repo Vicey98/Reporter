@@ -1,0 +1,37 @@
+## Database
+#spring.datasource.driverClassName = com.mysql.jdbc.Driver
+#spring.datasource.url = jdbc:mysql://localhost:3306/logparser
+#spring.datasource.username = root
+#spring.datasource.password = root
+#
+#spring.jpa.database = MYSQL
+#spring.jpa.show-sql = true
+#
+## Hibernate
+#hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#hibernate.show_sql: true
+#hibernate.hbm2ddl.auto: update
+#entitymanager.packagesToScan: /
+spring:
+  profiles:
+    active:
+      default
+  application:
+    name: Reporter
+#  datasource:
+#    url: jdbc:postgresql://reporter_db.svc:5432/reporter_db
+#    username: user
+#    password: password
+  datasource:
+    url: ${REPORTER_DB_URL}
+    username: ${REPORTER_DB_USERNAME}
+    password: ${REPORTER_DB_PASSWORD}
+  sql:
+    init:
+      mode: always
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+server:
+  port: 5000
