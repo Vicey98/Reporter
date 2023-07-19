@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Reporter
+  datasource:
+    url: jdbc:postgresql://database-reporter.clayrsa6ygqn.ap-southeast-2.rds.amazonaws.com:5432/database_reporter
+    username: postgres
+    password: Password!12345
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 5000
